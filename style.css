@@ -1,0 +1,81 @@
+/* Font import */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@font-face {
+  font-family: "AvantGardeGothicMedium";
+  src: url(../fonts/Medium.otf);
+}
+
+/* Color palette */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Normal */
+:root {
+  --white: #ffffff;
+  --grey: #dfe4e5;
+  --mint: #d4e9db;
+  --green: #46aa64;
+  --darkgreen: #379453;
+  --navy: #0a3250;
+  --black: #000000;
+}
+
+/* Accessibility */
+
+@media (prefers-contrast: more) {
+
+  :root {
+    --green: #135c29;
+  }
+}
+
+/* CSS */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+body {
+  font-family: 'AvantGardeGothicMedium';
+  display: flex;
+  gap: 4em;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+header {
+  padding: 1em;
+  color: var(--green);
+}
+
+aside {
+  background-color: var(--green);
+  padding: 2em;
+  max-width: 12vw;
+  min-width: 12vw;
+  width: 12vw;
+  height: 100vh;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
+  margin: 0;
+  margin-top: 2em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+.main {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+
