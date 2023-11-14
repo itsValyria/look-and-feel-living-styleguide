@@ -29,12 +29,16 @@
   }
 }
 
-/* CSS */
+/* Normalize */
+* {
+  box-sizing: border-box;
+}
+
+/* Side bar, header & titles */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 body {
   font-family: 'AvantGardeGothicMedium';
   display: flex;
-  gap: 4em;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
@@ -43,15 +47,39 @@ body {
 header {
   padding: 1em;
   color: var(--green);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  height: 8em;
+}
+
+header h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1em 2em;
 }
 
 aside {
   background-color: var(--green);
   padding: 2em;
-  max-width: 12vw;
-  min-width: 12vw;
-  width: 12vw;
+  /* max-width: 12vw;
+  min-width: 12vw; */
+  width: 20vw;
   height: 100vh;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+aside h2 {
+  margin: 0;
+  font-size: 1.8em;
+  /* color: var(--navy);
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: solid 2px var(--white); */
+  background-color: var(--white);
+  text-align: center;
+  padding: 1em;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 ul, li, a {
@@ -69,13 +97,62 @@ ul {
   margin-top: 2em;
 }
 
+span {
+  color: var(--green);
+}
+
 a {
   font-size: 1.2em;
 }
 
+a:hover {
+  color: var(--white);
+  transition: 200ms;
+}
+
+ul {
+  padding: 0.4em;
+  font-weight: bold;
+}
+
+.primary-container {
+  flex: 1;
+}
+
 .main {
-  max-height: 100vh;
+  max-height: calc(100vh - 8em);
   overflow: auto;
 }
 
+.category-list {
+  margin: 2em 4em;
+}
 
+.category-list h3 {
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: var(--white);
+  color: white;
+}
+
+/* CSS voor de content */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.colorpalette {
+  border: solid 4px var(--grey);
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.typography-bold {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.typography-light {
+  font-weight: lighter;
+  font-size: 2em;
+}
