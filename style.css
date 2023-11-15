@@ -64,7 +64,7 @@ header h1 {
 }
 
 aside {
-  background-color: var(--green);
+  background-color: var(--white);
   padding: 2em;
   /* max-width: 12vw;
   min-width: 12vw; */
@@ -111,7 +111,7 @@ a {
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--darkgreen);
   transition: 200ms;
 }
 
