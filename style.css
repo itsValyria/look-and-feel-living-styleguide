@@ -69,7 +69,7 @@ aside {
   /* max-width: 12vw;
   min-width: 12vw; */
   width: 20vw;
-  height: 100vh;
+  height: 100vw;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
@@ -84,7 +84,7 @@ aside h2 {
   text-align: center;
   padding: 1em;
   border-radius: 16px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
 }
 
 ul, li, a {
