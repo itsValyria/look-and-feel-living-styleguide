@@ -52,20 +52,19 @@ body {
 header {
   padding: 1em;
   color: var(--green);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   height: 8em;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 header h1 {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin: 1em 2em;
+  margin: 1em;
 }
 
 aside {
   background-color: var(--white);
-  padding: 2em;
+  padding: 2.8em;
   /* max-width: 12vw;
   min-width: 12vw; */
   width: 20vw;
@@ -81,10 +80,7 @@ aside h2 {
   padding: 1em 0;
   border-bottom: solid 2px var(--white); */
   background-color: var(--white);
-  text-align: center;
-  padding: 1em;
-  border-radius: 16px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 0.2em;
 }
 
 ul, li, a {
@@ -143,6 +139,30 @@ ul {
   color: white;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a3250;
+  color: white;
+  padding: 2em;
+}
+
+footer > a {
+  padding: 1em;
+  margin-top: 4px;
+}
+
+footer > a:hover {
+  color: var(--grey);
+  cursor: pointer;
+}
+
+footer > a > svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
 /* CSS voor de content */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
@@ -161,6 +181,7 @@ ul {
   font-weight: lighter;
   font-size: 2em;
 }
+
 #icons {
   display: flex;
   flex-direction: column;
