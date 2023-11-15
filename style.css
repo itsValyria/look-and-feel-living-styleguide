@@ -65,10 +65,8 @@ header h1 {
 aside {
   background-color: var(--white);
   padding: 2.8em;
-  /* max-width: 12vw;
-  min-width: 12vw; */
   width: 20vw;
-  height: 100vw;
+  height: 100vh;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
@@ -99,6 +97,7 @@ span {
 
 a {
   font-size: 1.2em;
+  display: block;
 }
 
 a:hover {
@@ -125,7 +124,7 @@ ul {
 }
 
 .category-list h3 {
-  font-size: 1.6em;
+  font-size: 2em;
   text-decoration: underline;
 }
 
@@ -161,6 +160,50 @@ footer > a > svg {
 /* CSS voor de content */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
+h4 {
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+
+.circles {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 16px;
+}
+
+.circles p {
+  margin: auto 0;
+}
+
+.colors-flexbox {
+  display: flex;
+  gap: 16em;
+  margin-bottom: 4em;
+}
+
+.colors-flexbox pre {
+  font-size: 3em;
+  margin: 0;
+}
+
+.color-circle {
+  border-radius: 100%;
+  height: 64px;
+  width: 64px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.code-flexbox {
+  display: flex;
+  gap: 2em;
+}
+
+pre code {
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 .colorpalette {
   border: solid 4px var(--grey);
   border-radius: 16px;
@@ -170,11 +213,13 @@ footer > a > svg {
 .typography-bold {
   font-weight: bold;
   font-size: 2em;
+  text-decoration: none;
 }
 
 .typography-light {
   font-weight: lighter;
   font-size: 2em;
+  text-decoration: none;
 }
 
 #icons {
@@ -186,4 +231,33 @@ footer > a > svg {
 
 .icons {
   margin: 10px;
+}
+
+.interactive-items-nav {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.4em;
+}
+
+.interactive-items-nav li:hover {
+  scale: 1.1;
+  transition: 0.4s;
+}
+
+.interactive-items-link-container {
+  padding: 0;
+}
+
+.interactive-items-link {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.interactive-items-link:hover {
+  text-decoration: underline;
+}
+
+.interactive-items-text {
+  font-size: 1.2em;
+  margin: 0;
 }
