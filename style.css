@@ -161,3 +161,13 @@ ul {
   font-weight: lighter;
   font-size: 2em;
 }
+#icons {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.icons {
+  margin: 10px;
+}
