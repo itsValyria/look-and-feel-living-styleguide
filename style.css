@@ -261,3 +261,29 @@ pre code {
   font-size: 1.2em;
   margin: 0;
 }
+
+.headings {
+  display: flex;
+  gap: 1em;
+}
+
+.heading1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 0.5em;
+  font-size: 2.5em;
+  width: 7em;
+}
+
+.heading2 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  color: var(--navy);
+  padding: 0.5em;
+  font-size: 2.5em;
+  width: 7em;
+  box-shadow: 0 5px 5px 3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

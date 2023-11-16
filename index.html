@@ -102,7 +102,22 @@
 
             <section id="headings" class="category">
               <h3>Headings</h3>
-              <!-- Hier de content -->
+                <div class="headings">
+                  <div class="heading1" > Heading 1 </div>
+                  <div class="heading2" > Heading 2 </div>
+              </div>
+              <p>Wanneer de achtergrond #0A3250 (--navy), is dan word de tekst #ffffff (--white) en wanneer de achtergrond #ffffff (--white) is, word de tekst #0A3250 (--navy).</p>
+              <pre><code class="language-css">
+                .heading1 {
+                  display: flex;
+                  justify-content: center;
+                  background-color: var(--navy);
+                  color: var(--white);
+                  padding: 0.5em;
+                  font-size: 2.5em;
+                  width: 7em;
+                }
+              </code></pre>
             </section>
 
             <section id="navigation" class="category">
