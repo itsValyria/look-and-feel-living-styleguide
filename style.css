@@ -277,6 +277,16 @@ pre code {
   width: 7em;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color:var(--black);
+  margin-top: 12px;
+}
+
 .heading2 {
   display: flex;
   justify-content: center;
