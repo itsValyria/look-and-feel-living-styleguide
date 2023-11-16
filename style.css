@@ -23,7 +23,6 @@
 /* Accessibility */
 
 @media (prefers-contrast: more) {
-
   :root {
     --green: #135c29;
   }
@@ -42,7 +41,7 @@ html {
 }
 
 body {
-  font-family: 'AvantGardeGothicMedium';
+  font-family: "AvantGardeGothicMedium";
   display: flex;
   margin: 0;
   padding: 0;
@@ -76,7 +75,9 @@ aside h2 {
   padding: 0.2em;
 }
 
-ul, li, a {
+ul,
+li,
+a {
   list-style-type: none;
   text-decoration: none;
   color: unset;
@@ -222,10 +223,49 @@ pre code {
   text-decoration: none;
 }
 
+.button-primary {
+  width: 10.7em;
+  margin: 0.75em 2em;
+  padding: 1em;
+  padding-top: 0.9em;
+  font-size: 1em;
+  text-align: center;
+  /* text-transform: uppercase; */
+  border-radius: 2.5em;
+  border-style: none;
+  color: #272932;
+  background-color: #b3d9bb;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-primary:hover {
+  filter: brightness(105%);
+}
+
+.button-primary:active {
+  filter: brightness(80%);
+}
+
+.button-secundary {
+  width: 10.7em;
+  margin: 0.75em 2em;
+  padding: 1em;
+  padding-top: 0.9em;
+  font-size: 1em;
+  text-align: center;
+  /* text-transform: uppercase; */
+  border-radius: 2.5em;
+  border-style: none;
+  color: #ffffff;
+  background-color: #0a3250;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 #icons {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
