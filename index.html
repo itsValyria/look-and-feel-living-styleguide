@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <title>Styleguide | De Hallen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
 
@@ -102,7 +103,22 @@
 
             <section id="headings" class="category">
               <h3>Headings</h3>
-              <!-- Hier de content -->
+                <div class="headings">
+                  <div class="heading1" > Heading 1 </div>
+                  <div class="heading2" > Heading 2 </div>
+              </div>
+              <p>Wanneer de achtergrond #0A3250 (--navy), is dan word de tekst #ffffff (--white) en wanneer de achtergrond #ffffff (--white) is, word de tekst #0A3250 (--navy).</p>
+              <pre><code class="language-css">
+                .heading1 {
+                  display: flex;
+                  justify-content: center;
+                  background-color: var(--navy);
+                  color: var(--white);
+                  padding: 0.5em;
+                  font-size: 2.5em;
+                  width: 7em;
+                }
+              </code></pre>
             </section>
 
             <section id="navigation" class="category">
@@ -133,9 +149,13 @@
 
             <section id="icons" class="category">
               <h3>Icons</h3>
-              <img class="icons" src="assets/icon1.png" alt="Iconen voor de Hallen">
-              <img class="icons" src="assets/icon2.png" alt="Iconen voor de Hallen">
-              <img class="icons" src="assets/icon3.png" alt="Iconen voor de Hallen">
+              <span class="material-symbols-outlined" style="font-size: 48px;">
+                search
+                </span>
+                <span class="material-symbols-outlined" style="font-size: 48px">
+                  menu
+                  </span>
+              
               <!-- Hier de content -->
             </section>
 
