@@ -290,6 +290,10 @@ pre code {
 }
 
 .button-primary:hover {
+  color: var(--white);
+}
+
+.button-primary:hover {
   filter: brightness(105%);
 }
 
