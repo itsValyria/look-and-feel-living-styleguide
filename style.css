@@ -31,14 +31,11 @@
 /* Normalize */
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Side bar, header & titles */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: "AvantGardeGothicMedium";
