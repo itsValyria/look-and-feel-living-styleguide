@@ -223,6 +223,57 @@ pre code {
   text-decoration: none;
 }
 
+.section {
+  display: inline;
+  flex-direction: row;
+  padding: 2% 6%;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline;
+  padding: 0.5em 0.75em;
+}
+
+.nav-links ul li a {
+  color: #030202;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #2aad51;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.button-nav {
+  width: 10.7em;
+  padding: 1em;
+  padding-top: 0.9em;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2.5em;
+  border-style: none;
+  color: #ffffff;
+  background-color: #0a3250;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 .button-primary {
   width: 10.7em;
   margin: 0.75em 2em;
@@ -230,11 +281,10 @@ pre code {
   padding-top: 0.9em;
   font-size: 1em;
   text-align: center;
-  /* text-transform: uppercase; */
   border-radius: 2.5em;
   border-style: none;
   color: #272932;
-  background-color: #b3d9bb;
+  background-color: #46aa64;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -254,7 +304,6 @@ pre code {
   padding-top: 0.9em;
   font-size: 1em;
   text-align: center;
-  /* text-transform: uppercase; */
   border-radius: 2.5em;
   border-style: none;
   color: #ffffff;
@@ -262,6 +311,38 @@ pre code {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+.button-disabled {
+  width: 10.7em;
+  margin: 1.75em 2em;
+  padding: 1em;
+  padding-top: 0.9em;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 2.5em;
+  border-style: none;
+  opacity: 50%;
+  color: #272932;
+  background-color: #b3d9bb;
+  cursor: not-allowed;
+}
+
+.button-disabled-secundary {
+  width: 10.7em;
+  margin: 0.75em 2em;
+  padding: 1em;
+  padding-top: 0.9em;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 2.5em;
+  border-style: none;
+  opacity: 50%;
+  color: #ffffff;
+  background-color: #0a3250;
+  cursor: not-allowed;
+  transition: all 0.3s ease-in-out;
+}
+
 #icons {
   display: flex;
   flex-direction: column;

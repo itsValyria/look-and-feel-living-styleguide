@@ -9,6 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <title>Styleguide | De Hallen</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
 
@@ -124,18 +128,78 @@
             <section id="navigation" class="category">
               <h3>Navigation</h3>
               <!-- Hier de content -->
+              <p> Betreft de navigation is het belangrijk dat het deze content bevat. Verder moet het op een wit achtergrond en de hover state in het groen. </p>
+                <nav class="section">
+        <div class="nav-links">
+          <ul>
+            <h2>De Buurt<span>campus</span></h2>
+            <li><a href="">home</a></li>
+            <li><a href="">over ons</a></li>
+            <li><a href="">contact</a></li>
+            <li><button class="button-nav">aanmelden</button></li>
+          </ul>
+        </div>
+      </nav>
             </section>
 
             <section id="buttons" class="category">
               <h3>Buttons</h3>
               <!-- Hier de content -->
-              <a href="/index.html" class="button-primary">
-               Bekijk meer </a>
-
+              <p> Deze button wordt voor de meest belangrijke actie gebruikt op de pagina.</p>
               <a href="/index.html" class="button-secundary">
-               Meld je aan </a>
+               Meld je aan 
+              <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <br>
+              <p>Deze button is voor de alle overige acties op de pagina.</p>
+              <a href="/index.html" class="button-primary">
+               Bekijk meer
+              <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <pre><code class="language-css">
+                  .button {
+                    width: 10.7em;
+                    margin: 0.75em 2em;
+                    padding: 1em;
+                    padding-top: 0.9em;
+                    font-size: 1em;
+                    text-align: center;
+                    border-radius: 2.5em;
+                    border-style: none;
+                    color: #272932;
+                    background-color: #46aa64;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                  }
+                </code></pre>
+              <br>
+              <p>Deze buttons worden gebruikt als een actie (momenteel) niet kan worden uitgevoerd.</p>
+               <a href="/index.html" class="button-disabled">
+                Bekijk meer
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+               </a>
 
-            </section>
+              <a href="/index.html" class="button-disabled-secundary">
+                Meld je aan
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+               </a>
+
+                <pre><code class="language-css">
+                  .button-disabled {
+                    width: 10.7em;
+                    margin: 1.75em 2em;
+                    padding: 1em;
+                    padding-top: 0.9em;
+                    font-size: 1em;
+                    text-align: center;
+                    border-radius: 2.5em;
+                    border-style: none;
+                    opacity: 50%;
+                    color: #272932;
+                    background-color: #b3d9bb;
+                    cursor: not-allowed;
+                  }
+                </code></pre>
+</section>
+          
 
             <section id="forms" class="category">
               <h3>Forms</h3>
