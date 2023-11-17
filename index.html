@@ -147,6 +147,51 @@
             <li><button class="button-nav">aanmelden</button></li>
           </ul>
         </div>
+         <pre><code class="language-css">
+          .nav-links ul li {
+              list-style: none;
+              text-transform: uppercase;
+              display: inline;
+              padding: 0.5em 0.75em;
+            }
+
+            .nav-links ul li a {
+              color: #030202;
+              text-decoration: none;
+              font-size: 13px;
+              display: block;
+            }
+
+            .nav-links ul li::after {
+              content: "";
+              width: 0%;
+              height: 2px;
+              background: #2aad51;
+              display: block;
+              margin: auto;
+              transition: 0.5s;
+            }
+
+            .nav-links ul li:hover::after {
+              width: 100%;
+            }
+
+            .button-nav {
+              width: 10.7em;
+              padding: 1em;
+              padding-top: 0.9em;
+              font-size: 13px;
+              text-align: center;
+              text-transform: uppercase;
+              border-radius: 2.5em;
+              border-style: none;
+              color: #ffffff;
+              background-color: #0a3250;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+            }
+
+         </code></pre>
       </nav>
             </section>
 
