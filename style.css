@@ -39,7 +39,7 @@
 
 body {
   /* font-family: "AvantGardeGothicMedium"; */
-  font: normal normal normal 16px/1.5 'AvantGardeGothicMedium';
+  font: normal normal normal 16px/1.5 "AvantGardeGothicMedium";
   display: flex;
   margin: 0;
   padding: 0;
