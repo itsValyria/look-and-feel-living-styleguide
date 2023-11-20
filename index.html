@@ -118,6 +118,14 @@
                   <div class="heading2" > Heading 2 </div>
               </div>
               <p>Wanneer de achtergrond #0A3250 (--navy), is dan word de tekst #ffffff (--white) en wanneer de achtergrond #ffffff (--white) is, word de tekst #0A3250 (--navy).</p>
+              
+              <pre><code class="language-html">
+
+               &lt;div class="heading1" > Heading 1 &lt;/div>
+               &lt;div class="heading2" > Heading 2 &lt;/div>
+
+              </code></pre>
+              
               <pre><code class="language-css">
                 .heading1 {
                   display: flex;
@@ -135,7 +143,7 @@
               <h3>Navigation</h3>
               <!-- Hier de content -->
               <p> Betreft de navigation is het belangrijk dat het deze content bevat. Verder moet het op een wit achtergrond en de hover state in het groen. </p>
-                <nav class="section">
+            
         <div class="nav-links">
           <ul>
             <h2>De Buurt<span>campus</span></h2>
@@ -147,6 +155,20 @@
             <li><button class="button-nav">aanmelden</button></li>
           </ul>
         </div>
+        <pre><code class="language-html">
+            &lt;div class="nav-links">
+          &lt;ul>
+            &lt;h2>De Buurt&lt;span>campus&lt;/span>&lt;/h2>
+            &lt;section class="nav-flexbox">
+              &lt;li>&lt;a href="">home&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="">over ons&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="">contact&lt;/a>&lt;/li>
+            &lt;/section>
+            &lt;li>&lt;button class="button-nav">aanmelden&lt;/button>&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+
+        </code></pre>
          <pre><code class="language-css">
           .nav-links ul li {
               list-style: none;
@@ -207,6 +229,19 @@
               <a href="/index.html" class="button-primary">
                Bekijk meer
               <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                <pre><code class="language-html">
+                  
+                  &lt;a href="/index.html" class="button-secundary">
+                    Meld je aan 
+                  &lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>      
+
+                  &lt;a href="/index.html" class="button-primary">
+                    Bekijk meer
+                  &lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>
+                </code></pre>
+
+
                 <pre><code class="language-css">
                   .button {
                     width: 10.7em;
@@ -234,6 +269,14 @@
                 Meld je aan
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                </a>
+
+               <pre><code class="language-html">
+
+                  &lt;a href="/index.html" class="button-disabled"&lt;
+                    Bekijk meer
+                  &lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>
+
+               </code></pre>
 
                 <pre><code class="language-css">
                   .button-disabled {
